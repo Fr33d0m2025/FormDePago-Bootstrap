@@ -29,14 +29,15 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label for="card" class="form-label">Card #</label>
-              <input type="text" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" required
+              <input type="number" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" required
                 pattern="\d{16}" autocomplete="cc-number">
               <div class="invalid-feedback">Card number must be 16 digits.</div>
             </div>
 
             <div class="col-md-3">
               <label for="cvc" class="form-label">CVC #</label>
-              <input type="text" class="form-control" id="cvc" placeholder="000" required pattern="\d{3,4}" autocomplete="cc-csc">
+              <input type="number" class="form-control" id="cvc" placeholder="000" required pattern="\d{3,4}"
+                autocomplete="cc-csc">
               <div class="invalid-feedback">CVC must be 3 or 4 digits.</div>
             </div>
 
@@ -54,12 +55,12 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" required>
+              <input type="text" class="form-control" id="firstName" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
               <div class="invalid-feedback">First name is required.</div>
             </div>
             <div class="col-md-6">
               <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" required>
+              <input type="text" class="form-control" id="lastName" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
               <div class="invalid-feedback">Last name is required.</div>
             </div>
           </div>
@@ -125,7 +126,9 @@
               <label for="message" class="form-label">Message</label>
               <textarea class="form-control" id="message" rows="3" placeholder="Add any notes here."></textarea>
             </div>
+          </div>
 
+          <div class="card-footer">
             <div class="text-end">
               <button type="reset" class="btn btn-secondary me-2">Cancel</button>
               <button type="submit" class="btn btn-primary">Send</button>
@@ -141,4 +144,5 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
