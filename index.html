@@ -29,7 +29,7 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label for="card" class="form-label">Card #</label>
-              <input type="number" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" required
+              <input type="tel" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" required
                 pattern="\d{16}" autocomplete="cc-number">
               <div class="invalid-feedback">Card number must be 16 digits.</div>
             </div>
@@ -128,14 +128,12 @@
             </div>
           </div>
 
-          <div class="card-footer">
-            <div class="text-end">
+        </div>
+          <div class="card-footer text-end">
               <button type="reset" class="btn btn-secondary me-2">Cancel</button>
               <button type="submit" class="btn btn-primary">Send</button>
-            </div>
           </div>
         </form>
-      </div>
     </div>
   </div>
 
